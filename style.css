@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --secondary-color: #1c3fa8;
+  --yellow: #fed330;
+  --darkyellow: #f7b731;
+  --purple: #888fe6;
+  --darkpurple: #3c40c6;
+  --darkpink: #ff3f34;
+  --lightpink: #ff5e57;
+  --lightblue: #5352ed;
+  --darkblue: #3742fa;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 20px;
+  color: white;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Text sizes */
+.lead {
+  font-size: 18px;
+}
+
+.sm {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.md {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.lg {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.xl {
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+/* background colors */
+
+.bg-white {
+  background-color: white;
+}
+.bg-light {
+  background-color: #dfe6e9;
+  color: black;
+}
+.bg-gradient {
+  background-image: linear-gradient(to right, #fed330 0%, #ff5e57 100%);
+}
+.bg-yellow {
+  background-image: linear-gradient(to top, #fed330 0%, #fcb111 100%);
+}
+
+.bg-blue {
+  background-image: linear-gradient(to top, #8282f5 0%, #202bff 100%);
+}
+
+.bg-pink {
+  background-image: linear-gradient(to top, #fc7770 0%, #ff3f34 100%);
+}
+.bg-purple {
+  background-image: linear-gradient(
+    to top,
+    var(--purple) 0%,
+    var(--darkpurple) 100%
+  );
+}
+/* font-weight */
+
+.fw {
+  font-weight: bold;
+}
+
+/* text colors */
+
+.text-blue {
+  color: var(--secondary-color);
+}
+
+.text-yellow {
+  color: var(--darkyellow);
+}
+
+/* paddings */
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 1.5rem;
+}
+
+.px-3 {
+  padding: 0 2rem;
+}
+
+.px-4 {
+  padding: 0 3rem;
+}
+
+.px-5 {
+  padding: 0 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 2.5rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+/* margins */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 1.5rem;
+}
+
+.mx-3 {
+  margin: 0 2rem;
+}
+
+.mx-4 {
+  margin: 0 3rem;
+}
+
+.mx-5 {
+  margin: 0 4rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* text alignment */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+/* main css ********************************************************************************************************** */
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+:root {
+  --secondary-color: #1c3fa8;
+  --yellow: #fed330;
+  --darkyellow: #f7b731;
+  --purple: #575fcf;
+  --darkpurple: #3c40c6;
+  --darkpink: #ff3f34;
+  --lightpink: #ff5e57;
+  --lightblue: #5352ed;
+  --darkblue: #3742fa;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar nav ul li {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar nav ul li:hover {
+  background-color: var(--lightblue);
+  color: white !important;
+}
+
+/* hero section */
+
+.header-main {
+  width: 100%;
+}
+
+.header-main img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.header-cards {
+  max-width: 1100px;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 120px;
+}
+
+/* wellcome  */
+
+.wellcome-main {
+  margin-top: 160px !important;
+}
+
+.wellcome-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  justify-self: flex-start;
+  width: 140px;
+  font-size: 16px;
+  border: none;
+  color: white;
+}
+
+/* our swiming */
+
+.our-swimming {
+  background-image: url("images/jump.jpg");
+  width: 100%;
+  height: 380px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swim-card {
+  max-height: 380px;
+}
+
+/* our events */
+
+.fa-solid {
+  border: 2px solid white;
+  width: 30px;
+  height: 30px;
+  padding: 5px 7px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* profiles */
+
+.profiles {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.profiles .container .card img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin-top: -75px;
+}
+
+/* location  */
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 15px;
+}
+
+/* ************************************************************************************************ */
+
+/* for tablets */
+
+@media (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+  }
+  .card {
+    margin: 10px !important;
+  }
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 0px !important;
+  }
+  
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .navbar {
+    height: auto;
+  }
+  .navbar nav {
+    margin: 10px 0;
+  }
+  .navbar nav ul li {
+    padding: 10px 15px !important;
+    font-size: 15px;
+  }
+
+  .header-cards {
+    max-width: 1100px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .wellcome-main {
+    margin-top: 0px !important;
+  }
+  
+  .swim-card {
+  margin: 0 !important;
+    justify-self: center;
+  }
+
+  .profile-card:nth-child(3){
+    margin-top: 65px !important;
+  }
+
+  .profile-card:nth-child(4){
+    margin-top: 65px !important;
+  }
+
+  .map{
+    height: 350px;
+  }
+}
+
+/* for mobiles */
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .grid-4 {
+    grid-template-columns:  1fr !important;
+  }
+
+  .card {
+    margin: 15px !important;
+  }
+.navbar{
+  padding: 5px !important;
+}
+  .navbar nav ul li {
+    padding:  10px !important;
+    font-size: 13px;
+  }
+  .our-swimming {
+    height: 460px !important;
+  }
+  .swim-card {
+    margin: 0 !important;
+   max-height: 460px;
+    }
+
+    .profile-card:nth-child(2){
+      margin-top: 65px !important;
+    }
+}
