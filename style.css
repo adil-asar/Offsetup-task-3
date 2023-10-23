@@ -409,6 +409,58 @@ img {
 
 /* ************************************************************************************************ */
 
+
+@media (max-width: 1050px){
+
+  .our-swimming {
+    height: auto !important;
+  }
+  .swim-card {
+    margin: 0 !important;
+   max-height: auto;
+    }
+
+    .grid {
+      gap: 10px !important;
+    }
+  
+    .grid-4 {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .header-cards {
+      max-width: 1100px;
+      position: relative;
+      margin-top: -100px;
+      margin-left: 0px;
+    }
+    .header-cards .card{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    
+.wellcome-main {
+  margin-top: 50px !important;
+}
+.wellcome-main .grid img{
+  height: 350px;
+}
+.our-events .grid img{
+  height: 350px;
+}
+.profile-card{
+  margin: 10px;
+}
+.profile-card:nth-child(3){
+  margin-top: 65px !important;
+}
+
+.profile-card:nth-child(4){
+  margin-top: 65px !important;
+}
+}
+
 /* for tablets */
 
 @media (max-width: 800px) {
@@ -422,12 +474,7 @@ img {
     grid-template-columns: 1fr !important;
     gap: 0px !important;
   }
-  
-
-  .grid-4 {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
+ 
   .navbar {
     height: auto;
   }
@@ -454,15 +501,17 @@ img {
   margin: 0 !important;
     justify-self: center;
   }
-
-  .profile-card:nth-child(3){
+  .wellcome-main .grid img{
+    height: 300px;
+  }
+  .our-events .grid img{
+    height: 300px;
+  }
+  
+  .profile-card:nth-child(2){
     margin-top: 65px !important;
   }
-
-  .profile-card:nth-child(4){
-    margin-top: 65px !important;
-  }
-
+  
   .map{
     height: 350px;
   }
@@ -490,14 +539,12 @@ img {
     font-size: 13px;
   }
   .our-swimming {
-    height: 460px !important;
+    max-height: 460px !important;
   }
   .swim-card {
     margin: 0 !important;
-   max-height: 460px;
+   height: 460px;
     }
 
-    .profile-card:nth-child(2){
-      margin-top: 65px !important;
-    }
+   
 }
