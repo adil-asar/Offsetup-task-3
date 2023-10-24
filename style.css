@@ -527,11 +527,11 @@ img {
     margin: 15px !important;
   }
 .navbar{
-  padding: 5px !important;
+  padding:5px 2px !important;
 }
   .navbar nav ul li {
-    padding:  10px !important;
-    font-size: 13px;
+    padding:  5px !important;
+    font-size: 12px;
   }
   .our-swimming {
     max-height: 800px !important;
