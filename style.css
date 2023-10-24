@@ -542,10 +542,14 @@ img {
     }
 
    .md{
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
    }
 
    .phone h2{
     font-size: 16px !important;
+   }
+
+   .lead{
+    font-size: 15px;
    }
 }
